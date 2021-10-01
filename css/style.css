@@ -167,6 +167,7 @@ p {
 }
 
 .footer {
+  margin-top: 35px;
   display: flex;
   justify-content: space-between;
   background-color: hsl(233, 26%, 24%);
