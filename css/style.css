@@ -38,11 +38,31 @@
   background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
 }
 
+.btn2 {
+  width: 166px;
+  height: 46px;
+  border: none;
+  border-radius: 33px;
+  text-align: center;
+  color: white;
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#30d35c),
+    to(#2ab6d9)
+  );
+  background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+.dropdown-toggle {
+  display: none;
+}
+
 .section-1 {
   display: flex;
   width: 100%;
   height: 700px;
-
 }
 
 .brief_details {
@@ -167,7 +187,6 @@ p {
 }
 
 .footer {
-  margin-top: 35px;
   display: flex;
   justify-content: space-between;
   background-color: hsl(233, 26%, 24%);
@@ -212,4 +231,231 @@ p {
 
 .logo {
   margin-left: 100px;
+}
+
+@media screen and (max-width: 370px) {
+  .header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+  }
+
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .ul {
+    display: none;
+  }
+
+  .dropdown-toggle {
+    display: block;
+  }
+
+  .section-1 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .right {
+    background: url("../images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120%;
+    height: 250px;
+    background-position-y: -60px;
+    margin-left: -50px;
+  }
+
+  .right-img {
+    width: 80%;
+    height: 160%;
+    transform: translate(140px, -55px);
+    margin-left: -220px;
+  }
+
+  .brief_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .brief_details h2 {
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .brief_details p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .brief_details button {
+    margin-top: 0px;
+  }
+
+  .btn2 {
+    width: 170px;
+    height: 35px;
+    border: none;
+    border-radius: 33px;
+    text-align: center;
+    color: white;
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#30d35c),
+      to(#2ab6d9)
+    );
+    background: linear-gradient(
+      to left,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    );
+  }
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    height: 1200px;
+  }
+
+  .easybank_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
+  }
+
+  .sec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .easybank_wrapper h2 {
+    font-weight: 300;
+  }
+
+  .easybank_wrapper p {
+    color: grey;
+    width: 100%;
+  }
+
+  .easybank_options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .option {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1700px;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .latest-article {
+    margin-left: 0px;
+  }
+
+  .article-container {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+  }
+
+  .logo {
+    margin-left: 0px;
+  }
+  .ul-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160%;
+  }
+
+  .ul-2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 150%;
+    margin-left: 120px;
+  }
+
+  .end_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .end_menu button {
+    margin-left: 0px;
+  }
+
+  .ul-2 li {
+    margin: 10px;
+  }
+
+  #ul-2-2 {
+    margin-top: -13px;
+  }
 }
